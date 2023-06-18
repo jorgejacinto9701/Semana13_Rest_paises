@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:text="Información del País"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/spnPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                />
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buscar"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                />
+            <ImageView
+                android:id="@+id/idImageBandera"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:layout_gravity="center"
+                >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txtMoneda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moneda :"
+                android:textSize="11sp"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                />
+            <TextView
+                android:id="@+id/txtCapital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capital :"
+                android:textSize="11sp"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                />
+            <TextView
+                android:id="@+id/txtIdioma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Idioma :"
+                android:textSize="11sp"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                />
+            <TextView
+                android:id="@+id/txtPoblacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Población :"
+                android:textSize="11sp"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/idMapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
